@@ -1,2 +1,8 @@
-error: dbt1001: The current directory is not a dbt project directory; cd into it or pass a <path> to it via --project-dir <path>
-  Finished 'debug'  with 1 error in 311us 326ns
+dbt-fusion 2.0.0-beta.24
+   Loading profiles.yml
+   Loading dbt_project.yml
+   Loading dbt_internal_packages/dbt-adapters/dbt_project.yml
+   Loading dbt_internal_packages/dbt-databricks/dbt_project.yml
+   Loading dbt_internal_packages/dbt-spark/dbt_project.yml
+ Rendering models/stg/stg_tech_mews_db_prod__enterprises/stg_tech_mews_db_prod__enterprises.sql
+  Finished 'compile' target 'dev' in 135ms 379us 973ns
