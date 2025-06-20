@@ -1,0 +1,493 @@
+version: 2
+
+sources:
+  - name: mews_db_prod
+    description: This is the default template for sources.
+    database: tech
+    schema: mews_db_prod
+    tables:
+      - name: enterprise
+        description: Add description for source 'mews_db_prod.enterprise' here 
+        config:
+          tags: []
+        columns:
+          - name: Id
+            data_type: STRING
+            description: Add description for column 'Id' here 
+          - name: UniqueName
+            data_type: STRING
+            description: Add description for column 'UniqueName' here 
+          - name: Email
+            data_type: STRING
+            description: Add description for column 'Email' here 
+          - name: LoginScreenImageId
+            data_type: STRING
+            description: Add description for column 'LoginScreenImageId' here 
+          - name: CreatedUtc
+            data_type: TIMESTAMP
+            description: Add description for column 'CreatedUtc' here 
+          - name: UpdatedUtc
+            data_type: TIMESTAMP
+            description: Add description for column 'UpdatedUtc' here 
+          - name: IsDeleted
+            data_type: BOOLEAN
+            description: Add description for column 'IsDeleted' here 
+          - name: AddressId
+            data_type: STRING
+            description: Add description for column 'AddressId' here 
+          - name: WebsiteUrl
+            data_type: STRING
+            description: Add description for column 'WebsiteUrl' here 
+          - name: Telephone
+            data_type: STRING
+            description: Add description for column 'Telephone' here 
+          - name: TimeZoneId
+            data_type: STRING
+            description: Add description for column 'TimeZoneId' here 
+          - name: CityId
+            data_type: STRING
+            description: Add description for column 'CityId' here 
+          - name: DeletedUtc
+            data_type: TIMESTAMP
+            description: Add description for column 'DeletedUtc' here 
+          - name: LegalEnvironmentCode
+            data_type: STRING
+            description: Add description for column 'LegalEnvironmentCode' here 
+          - name: DefaultLanguageCode
+            data_type: STRING
+            description: Add description for column 'DefaultLanguageCode' here 
+          - name: DefaultCultureName
+            data_type: STRING
+            description: Add description for column 'DefaultCultureName' here 
+          - name: DefaultCurrencyCode
+            data_type: STRING
+            description: Add description for column 'DefaultCurrencyCode' here 
+          - name: ChainId
+            data_type: STRING
+            description: Add description for column 'ChainId' here 
+          - name: Type
+            data_type: INT
+            description: Add description for column 'Type' here 
+          - name: LogoId
+            data_type: STRING
+            description: Add description for column 'LogoId' here 
+          - name: Name
+            data_type: STRING
+            description: Add description for column 'Name' here 
+          - name: AccountingEditableHistoryWindowValue
+            data_type: STRING
+            description: Add description for column 'AccountingEditableHistoryWindowValue' here 
+          - name: OperationalEditableHistoryWindowValue
+            data_type: STRING
+            description: Add description for column 'OperationalEditableHistoryWindowValue' here 
+          - name: SubscriptionId
+            data_type: STRING
+            description: Add description for column 'SubscriptionId' here 
+          - name: Pricing
+            data_type: INT
+            description: Add description for column 'Pricing' here 
+          - name: LegalIdentifiersValue
+            data_type: STRING
+            description: Add description for column 'LegalIdentifiersValue' here 
+          - name: CreatorProfileId
+            data_type: STRING
+            description: Add description for column 'CreatorProfileId' here 
+          - name: UpdaterProfileId
+            data_type: STRING
+            description: Add description for column 'UpdaterProfileId' here 
+          - name: Options
+            data_type: INT
+            description: Add description for column 'Options' here 
+          - name: AddressCountryCode
+            data_type: STRING
+            description: Add description for column 'AddressCountryCode' here 
+          - name: InlinedAddressValue
+            data_type: STRING
+            description: Add description for column 'InlinedAddressValue' here 
+          - name: GrossAmountTaxPrecision
+            data_type: INT
+            description: Add description for column 'GrossAmountTaxPrecision' here 
+          - name: TripAdvisorId
+            data_type: STRING
+            description: Add description for column 'TripAdvisorId' here 
+          - name: InactivePaymentCardDeletionPeriodValue
+            data_type: STRING
+            description: Add description for column 'InactivePaymentCardDeletionPeriodValue' here 
+          - name: ExternalIdentifier
+            data_type: STRING
+            description: Add description for column 'ExternalIdentifier' here 
+          - name: IsMigratedToAbp
+            data_type: BOOLEAN
+            description: Add description for column 'IsMigratedToAbp' here 
+          - name: ProductChampionEmail
+            data_type: STRING
+            description: Add description for column 'ProductChampionEmail' here 
+          - name: DefaultSenderEmail
+            data_type: STRING
+            description: Add description for column 'DefaultSenderEmail' here 
+          - name: DefaultSenderEmailValidated
+            data_type: BOOLEAN
+            description: Add description for column 'DefaultSenderEmailValidated' here 
+          - name: IsMfaEnforced
+            data_type: BOOLEAN
+            description: Add description for column 'IsMfaEnforced' here 
+          - name: AreExternalCardPaymentsEnabled
+            data_type: BOOLEAN
+            description: Add description for column 'AreExternalCardPaymentsEnabled' here 
+          - name: ExternalCardPaymentsEnabledUtc
+            data_type: TIMESTAMP
+            description: Add description for column 'ExternalCardPaymentsEnabledUtc' here 
+          - name: OnboardingStatus
+            data_type: INT
+            description: Add description for column 'OnboardingStatus' here 
+          - name: IsDeviceAuthorizationEnforced
+            data_type: BOOLEAN
+            description: Add description for column 'IsDeviceAuthorizationEnforced' here 
+          - name: OptionsEnumFlags
+            data_type: ARRAY
+            description: Add description for column 'OptionsEnumFlags' here 
+          - name: TypeEnumLabel
+            data_type: STRING
+            description: Add description for column 'TypeEnumLabel' here 
+          - name: OnboardingStatusEnumFlags
+            data_type: ARRAY
+            description: Add description for column 'OnboardingStatusEnumFlags' here 
+          - name: PricingEnumLabel
+            data_type: STRING
+            description: Add description for column 'PricingEnumLabel' here 
+          - name: TimeZoneIdIana
+            data_type: STRING
+            description: Add description for column 'TimeZoneIdIana' here 
+          - name: SubscriptionNotes
+            data_type: STRING
+            description: Add description for column 'SubscriptionNotes' here 
+          - name: SubscriptionAccountingCurrencyCode
+            data_type: STRING
+            description: Add description for column 'SubscriptionAccountingCurrencyCode' here 
+          - name: SubscriptionNumber
+            data_type: INT
+            description: Add description for column 'SubscriptionNumber' here 
+          - name: SubscriptionSettlement
+            data_type: INT
+            description: Add description for column 'SubscriptionSettlement' here 
+          - name: SubscriptionType
+            data_type: INT
+            description: Add description for column 'SubscriptionType' here 
+          - name: SubscriptionAffiliateNumber
+            data_type: INT
+            description: Add description for column 'SubscriptionAffiliateNumber' here 
+          - name: SubscriptionAffiliateCommission
+            data_type: DECIMAL
+            description: Add description for column 'SubscriptionAffiliateCommission' here 
+          - name: SubscriptionEmail
+            data_type: STRING
+            description: Add description for column 'SubscriptionEmail' here 
+          - name: SubscriptionFirstName
+            data_type: STRING
+            description: Add description for column 'SubscriptionFirstName' here 
+          - name: SubscriptionLastName
+            data_type: STRING
+            description: Add description for column 'SubscriptionLastName' here 
+          - name: SubscriptionCompany
+            data_type: STRING
+            description: Add description for column 'SubscriptionCompany' here 
+          - name: SubscriptionTaxIdentificationNumber
+            data_type: STRING
+            description: Add description for column 'SubscriptionTaxIdentificationNumber' here 
+          - name: SubscriptionTermination
+            data_type: INT
+            description: Add description for column 'SubscriptionTermination' here 
+          - name: SubscriptionTerminationNotes
+            data_type: STRING
+            description: Add description for column 'SubscriptionTerminationNotes' here 
+          - name: SubscriptionTier
+            data_type: INT
+            description: Add description for column 'SubscriptionTier' here 
+          - name: SubscriptionMerchantSettlementPeriod
+            data_type: INT
+            description: Add description for column 'SubscriptionMerchantSettlementPeriod' here 
+          - name: SubscriptionCrmIdentifier
+            data_type: STRING
+            description: Add description for column 'SubscriptionCrmIdentifier' here 
+          - name: SubscriptionKind
+            data_type: INT
+            description: Add description for column 'SubscriptionKind' here 
+          - name: SubscriptionTimeZoneId
+            data_type: STRING
+            description: Add description for column 'SubscriptionTimeZoneId' here 
+          - name: SubscriptionCreatedUtc
+            data_type: TIMESTAMP
+            description: Add description for column 'SubscriptionCreatedUtc' here 
+          - name: SubscriptionUpdatedUtc
+            data_type: TIMESTAMP
+            description: Add description for column 'SubscriptionUpdatedUtc' here 
+          - name: SubscriptionDeletedUtc
+            data_type: TIMESTAMP
+            description: Add description for column 'SubscriptionDeletedUtc' here 
+          - name: SubscriptionIsDeleted
+            data_type: BOOLEAN
+            description: Add description for column 'SubscriptionIsDeleted' here 
+          - name: SubscriptionCreatorProfileId
+            data_type: STRING
+            description: Add description for column 'SubscriptionCreatorProfileId' here 
+          - name: SubscriptionUpdaterProfileId
+            data_type: STRING
+            description: Add description for column 'SubscriptionUpdaterProfileId' here 
+          - name: SubscriptionLastSuccessfulTransactionCalculationUtc
+            data_type: TIMESTAMP
+            description: Add description for column 'SubscriptionLastSuccessfulTransactionCalculationUtc' here 
+          - name: SubscriptionConcurrencyToken
+            data_type: BINARY
+            description: Add description for column 'SubscriptionConcurrencyToken' here 
+          - name: SubscriptionSettlementAccountCode
+            data_type: STRING
+            description: Add description for column 'SubscriptionSettlementAccountCode' here 
+          - name: SubscriptionRiskCategory
+            data_type: INT
+            description: Add description for column 'SubscriptionRiskCategory' here 
+          - name: SubscriptionKnowYourCustomerChecks
+            data_type: INT
+            description: Add description for column 'SubscriptionKnowYourCustomerChecks' here 
+          - name: SubscriptionOldSubscriptionCode
+            data_type: INT
+            description: Add description for column 'SubscriptionOldSubscriptionCode' here 
+          - name: SubscriptionKnowYourCustomerChecksResult
+            data_type: INT
+            description: Add description for column 'SubscriptionKnowYourCustomerChecksResult' here 
+          - name: SubscriptionInvoicingEmail
+            data_type: INT
+            description: Add description for column 'SubscriptionInvoicingEmail' here 
+          - name: SubscriptionContractCode
+            data_type: STRING
+            description: Add description for column 'SubscriptionContractCode' here 
+          - name: SubscriptionState
+            data_type: INT
+            description: Add description for column 'SubscriptionState' here 
+          - name: SubscriptionTerminatedUtc
+            data_type: TIMESTAMP
+            description: Add description for column 'SubscriptionTerminatedUtc' here 
+          - name: SubscriptionOperationModes
+            data_type: INT
+            description: Add description for column 'SubscriptionOperationModes' here 
+          - name: SubscriptionAddress
+            data_type: STRING
+            description: Add description for column 'SubscriptionAddress' here 
+          - name: SubscriptionCrmInvoicingIdentifier
+            data_type: STRING
+            description: Add description for column 'SubscriptionCrmInvoicingIdentifier' here 
+          - name: SubscriptionRefundPolicy
+            data_type: INT
+            description: Add description for column 'SubscriptionRefundPolicy' here 
+          - name: SubscriptionTypeEnumLabel
+            data_type: STRING
+            description: Add description for column 'SubscriptionTypeEnumLabel' here 
+          - name: SubscriptionKindEnumLabel
+            data_type: STRING
+            description: Add description for column 'SubscriptionKindEnumLabel' here 
+          - name: SubscriptionOperationModesEnumFlags
+            data_type: ARRAY
+            description: Add description for column 'SubscriptionOperationModesEnumFlags' here 
+          - name: SubscriptionSettlementEnumLabel
+            data_type: STRING
+            description: Add description for column 'SubscriptionSettlementEnumLabel' here 
+          - name: SubscriptionStateEnumLabel
+            data_type: STRING
+            description: Add description for column 'SubscriptionStateEnumLabel' here 
+          - name: SubscriptionTerminationEnumLabel
+            data_type: STRING
+            description: Add description for column 'SubscriptionTerminationEnumLabel' here 
+          - name: SubscriptionTierEnumLabel
+            data_type: STRING
+            description: Add description for column 'SubscriptionTierEnumLabel' here 
+          - name: SubscriptionRefundPolicyEnumLabel
+            data_type: STRING
+            description: Add description for column 'SubscriptionRefundPolicyEnumLabel' here 
+          - name: SubscriptionKnowYourCustomerChecksEnumFlags
+            data_type: ARRAY
+            description: Add description for column 'SubscriptionKnowYourCustomerChecksEnumFlags' here 
+          - name: SubscriptionKnowYourCustomerChecksResultEnumLabel
+            data_type: STRING
+            description: Add description for column 'SubscriptionKnowYourCustomerChecksResultEnumLabel' here 
+          - name: SubscriptionMerchantSettlementPeriodEnumLabel
+            data_type: STRING
+            description: Add description for column 'SubscriptionMerchantSettlementPeriodEnumLabel' here 
+          - name: SubscriptionRiskCategoryEnumLabel
+            data_type: STRING
+            description: Add description for column 'SubscriptionRiskCategoryEnumLabel' here 
+          - name: SubscriptionTimeZoneIdIana
+            data_type: STRING
+            description: Add description for column 'SubscriptionTimeZoneIdIana' here 
+          - name: Territory
+            data_type: STRING
+            description: Add description for column 'Territory' here 
+          - name: Region
+            data_type: STRING
+            description: Add description for column 'Region' here 
+          - name: Subregion
+            data_type: STRING
+            description: Add description for column 'Subregion' here 
+          - name: CountryCode
+            data_type: STRING
+            description: Add description for column 'CountryCode' here 
+          - name: CountryName
+            data_type: STRING
+            description: Add description for column 'CountryName' here 
+          - name: AccountOwner
+            data_type: STRING
+            description: Add description for column 'AccountOwner' here 
+          - name: ImplementationManager
+            data_type: STRING
+            description: Add description for column 'ImplementationManager' here 
+          - name: CommercialSegment
+            data_type: STRING
+            description: Add description for column 'CommercialSegment' here 
+          - name: ChainCreatedUtc
+            data_type: TIMESTAMP
+            description: Add description for column 'ChainCreatedUtc' here 
+          - name: ChainUpdatedUtc
+            data_type: TIMESTAMP
+            description: Add description for column 'ChainUpdatedUtc' here 
+          - name: ChainDeletedUtc
+            data_type: TIMESTAMP
+            description: Add description for column 'ChainDeletedUtc' here 
+          - name: ChainIsDeleted
+            data_type: BOOLEAN
+            description: Add description for column 'ChainIsDeleted' here 
+          - name: ChainName
+            data_type: STRING
+            description: Add description for column 'ChainName' here 
+          - name: ChainEmail
+            data_type: STRING
+            description: Add description for column 'ChainEmail' here 
+          - name: ChainOptions
+            data_type: INT
+            description: Add description for column 'ChainOptions' here 
+          - name: ChainEnabledCustomerClassifications
+            data_type: INT
+            description: Add description for column 'ChainEnabledCustomerClassifications' here 
+          - name: ChainInactiveCustomerDeletionPeriodValue
+            data_type: STRING
+            description: Add description for column 'ChainInactiveCustomerDeletionPeriodValue' here 
+          - name: ChainCreatorProfileId
+            data_type: STRING
+            description: Add description for column 'ChainCreatorProfileId' here 
+          - name: ChainUpdaterProfileId
+            data_type: STRING
+            description: Add description for column 'ChainUpdaterProfileId' here 
+          - name: ChainIdentifier
+            data_type: STRING
+            description: Add description for column 'ChainIdentifier' here 
+          - name: ChainLegalEmail
+            data_type: STRING
+            description: Add description for column 'ChainLegalEmail' here 
+          - name: ChainCardSharingEnabled
+            data_type: BOOLEAN
+            description: Add description for column 'ChainCardSharingEnabled' here 
+          - name: ChainCardsharingEnabledUTC
+            data_type: TIMESTAMP
+            description: Add description for column 'ChainCardsharingEnabledUTC' here 
+          - name: ChainEnabledCustomerClassificationsEnumFlags
+            data_type: ARRAY
+            description: Add description for column 'ChainEnabledCustomerClassificationsEnumFlags' here 
+          - name: ChainOptionsEnumFlags
+            data_type: ARRAY
+            description: Add description for column 'ChainOptionsEnumFlags' here 
+          - name: AddressUpdatedUtc
+            data_type: TIMESTAMP
+            description: Add description for column 'AddressUpdatedUtc' here 
+          - name: AddressCreatedUtc
+            data_type: TIMESTAMP
+            description: Add description for column 'AddressCreatedUtc' here 
+          - name: AddressAddressLine1
+            data_type: STRING
+            description: Add description for column 'AddressAddressLine1' here 
+          - name: AddressCity
+            data_type: STRING
+            description: Add description for column 'AddressCity' here 
+          - name: AddressCustomerId
+            data_type: STRING
+            description: Add description for column 'AddressCustomerId' here 
+          - name: AddressUserId
+            data_type: STRING
+            description: Add description for column 'AddressUserId' here 
+          - name: AddressCompanyId
+            data_type: STRING
+            description: Add description for column 'AddressCompanyId' here 
+          - name: AddressDeletedUtc
+            data_type: TIMESTAMP
+            description: Add description for column 'AddressDeletedUtc' here 
+          - name: AddressIsDeleted
+            data_type: BOOLEAN
+            description: Add description for column 'AddressIsDeleted' here 
+          - name: AddressCreatorProfileId
+            data_type: STRING
+            description: Add description for column 'AddressCreatorProfileId' here 
+          - name: AddressUpdaterProfileId
+            data_type: STRING
+            description: Add description for column 'AddressUpdaterProfileId' here 
+          - name: AddressPositionLatitudeValue
+            data_type: DOUBLE
+            description: Add description for column 'AddressPositionLatitudeValue' here 
+          - name: AddressPositionLongitudeValue
+            data_type: DOUBLE
+            description: Add description for column 'AddressPositionLongitudeValue' here 
+          - name: AddressAddressLine2
+            data_type: STRING
+            description: Add description for column 'AddressAddressLine2' here 
+          - name: AddressPostalCode
+            data_type: STRING
+            description: Add description for column 'AddressPostalCode' here 
+          - name: AddressCountrySubdivisionCode
+            data_type: STRING
+            description: Add description for column 'AddressCountrySubdivisionCode' here 
+          - name: CityLocalName
+            data_type: STRING
+            description: Add description for column 'CityLocalName' here 
+          - name: CityImageId
+            data_type: STRING
+            description: Add description for column 'CityImageId' here 
+          - name: CityCreatedUtc
+            data_type: TIMESTAMP
+            description: Add description for column 'CityCreatedUtc' here 
+          - name: CityUpdatedUtc
+            data_type: TIMESTAMP
+            description: Add description for column 'CityUpdatedUtc' here 
+          - name: CityIsDeleted
+            data_type: BOOLEAN
+            description: Add description for column 'CityIsDeleted' here 
+          - name: CityCountryCode
+            data_type: STRING
+            description: Add description for column 'CityCountryCode' here 
+          - name: CityDeletedUtc
+            data_type: TIMESTAMP
+            description: Add description for column 'CityDeletedUtc' here 
+          - name: CityCreatorProfileId
+            data_type: STRING
+            description: Add description for column 'CityCreatorProfileId' here 
+          - name: CityUpdaterProfileId
+            data_type: STRING
+            description: Add description for column 'CityUpdaterProfileId' here 
+          - name: CityPositionLatitudeValue
+            data_type: DOUBLE
+            description: Add description for column 'CityPositionLatitudeValue' here 
+          - name: CityPositionLongitudeValue
+            data_type: DOUBLE
+            description: Add description for column 'CityPositionLongitudeValue' here 
+          - name: CityNames
+            data_type: MAP
+            description: Add description for column 'CityNames' here 
+          - name: CityShortNames
+            data_type: MAP
+            description: Add description for column 'CityShortNames' here 
+          - name: CityDescriptions
+            data_type: MAP
+            description: Add description for column 'CityDescriptions' here 
+          - name: SpaceCapacity
+            data_type: LONG
+            description: Add description for column 'SpaceCapacity' here 
+          - name: BusinessUnit
+            data_type: STRING
+            description: Add description for column 'BusinessUnit' here 
+          - name: SurchargesConfigured
+            data_type: BOOLEAN
+            description: Add description for column 'SurchargesConfigured' here 
