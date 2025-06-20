@@ -1,4 +1,6 @@
-with source as (
+with 
+
+source as (
   select
     *
   from 
@@ -21,10 +23,10 @@ model as (
     TripAdvisorId::string as trip_advisor_id,
     ChainId::varchar(36) as chain_id,
     -- Date fields (in the application database)
-    CreatedUtc::timestamp_ntz as pms_property_created_at,
-    UpdatedUtc::timestamp_ntz as pms_property_updated_at,
-    DeletedUtc::timestamp_ntz as pms_property_deleted_at,
-    ExternalCardPaymentsEnabledUtc::timestamp_ntz as external_card_payments_enabled_at,
+    CreatedUtc::timestamp as pms_property_created_at,
+    UpdatedUtc::timestamp as pms_property_updated_at,
+    DeletedUtc::timestamp as pms_property_deleted_at,
+    ExternalCardPaymentsEnabledUtc::timestamp as external_card_payments_enabled_at,
     -- Time windows (in the application database)
     AccountingEditableHistoryWindowValue::string as accounting_editable_history_window,
     OperationalEditableHistoryWindowValue::string as operational_editable_history_window,
